@@ -4,8 +4,8 @@ from scrapy import Selector
 from scrapy.crawler import CrawlerProcess
 
 
-class PeppySpider(scrapy.Spider):
-    name = "peppy_spider"
+class PepeSpider(scrapy.Spider):
+    name = "pepe_spider"
 
     def start_requests(self):
         urls = ["http://boards.4chan.org/pol/"]
@@ -22,7 +22,7 @@ class PeppySpider(scrapy.Spider):
 process = CrawlerProcess()
 
 # tell the process which spider to use
-process.crawl(PeppySpider)
+process.crawl(PepeSpider)
 
 # strart the crawl
 process.start()
